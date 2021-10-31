@@ -4,7 +4,7 @@ Due to the bad network environment and some shitty bugs of my computer,
 First we need to build a proxy to get through the firewall.
 As for the shitty bugs, I need a file called "git.ignore" located in .git directory.
 The content of which is as following:
-``# Created by https://www.toptal.com/developers/gitignore/api/windows
+`# Created by https://www.toptal.com/developers/gitignore/api/windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows
 
 ### Windows ###
@@ -33,4 +33,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows``
+# End of https://www.toptal.com/developers/gitignore/api/windows`
