@@ -97,5 +97,48 @@ And push it to cloud!
 ```
 git push (remoteaddress) (branch)
 ```
+Then you have to authenticate your identity, a new window will pop up and ask you to login with browser or using personal token.
+To generate tokens, first verify your email address, if it hasn't been verified yet.
+
+In the upper-right corner of any page, click your profile photo, then click Settings.
+
+![这是图片](/Asset/img/userbar-account-settings.png "s2")
+
+In the left sidebar, click Developer settings.
+
+![这是图片](/Asset/img/developer-settings.png "s3")
+
+In the left sidebar, click Personal access tokens.
+
+![这是图片](/Asset/img/personal_access_tokens_tab.png "s4")
+
+Click Generate new token.
+
+![这是图片](/Asset/img/generate_new_token.png "s5")
+
+Give your token a descriptive name.
+
+![这是图片](/Asset/img/token_description.png "s6")
+
+To give your token an expiration, select the Expiration drop-down menu, then click a default or use the calendar picker.
+
+
+![这是图片](/Asset/img/token_expiration.png "s7")
+
+Select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select repo.
+
+![这是图片](/Asset/img/token_scopes.gif "s8")
+
+Click Generate token.
+
+![这是图片](/Asset/img/generate_token.png "s9")
+![这是图片](/Asset/img/personal_access_tokens.png "s9")
+
+Warning: Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
+
+Paste the token to the blank, authentication complete.
+
+You won't have to do this again until the token expired.
+
 We can leave the latter two parameter blank if we are under the repository directory.
 END
