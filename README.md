@@ -78,6 +78,11 @@ Supposing the proxy number is 9999. Tell the git to transfer the fluss to right 
 git config --global http.proxy 127.0.0.1:9999
 git config --global https.proxy 127.0.0.1:9999
 ```
+It's ok to update it with commands above.
+Besides we can use socks5 proxy by commands:
+```
+git config --global https.proxy socks5://127.0.0.1:9999
+```
 To reset,  use command
 ```
 git config --global --unset http.proxy
@@ -141,4 +146,62 @@ Paste the token to the blank, authentication complete.
 You won't have to do this again until the token expired.
 
 We can leave the latter two parameter blank if we are under the repository directory.
+
+
+
+
+
+While I'm using git to upload my homework data (Hausaufgabe in germany). It goes sticky and suddenly don't work any more.
+I struggled for about a whole afternoon, gained a better command of the command line and config properties about git without solving the problem.
+
+The maximum of the uploading size is 500MB. But the default size is 1MB.
+
+To change the size, we can use command:
+```
+git config --global http.postbuffer 5242880000
+```
+Well no matter how large you set the number, it will remain 5242880000 at the top.
+
+And when the network is unstable, here I mean unstable rather than shitty, we can use the following command to extent the limit of the network quality.
+```
+git config --global http.lowspeedlimit 0
+git config --global http.lowspeedtime 999999
+```
+
+Sometimes, we also use 
+```
+git config --global http.sslverify false
+```
+
+But thats "http" oriented rather than https, I didn't try how's it work on https.
+
+Actually I haven't found the differences between before and after I had applied them as well.
+
+That goes to the solution to the problem:
+
+What if I mistakely added and commited files larger than 500MB?
+
+The answer is nothing will happen. REALLY!
+
+And then you will be not able to push any thing! EVEN IF YOU REMOVE THOSE FILES!
+
+BECAUSE THEY HAVE BEEN COMMITTED!
+
+But there is still a way to solve that kind of problem.
+
+First, find out the log.
+
+```
+git log
+```
+
+It shows:
+![这是图片](/Asset/img/Git_Log.png "s7")
+
+Find the commit you want to get back to and copy the hash string.
+```
+git reset --hard commit_hash 
+```
+Ok, nothing really happens.
+
 END
