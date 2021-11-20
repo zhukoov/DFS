@@ -6,29 +6,29 @@ Open IntelliJ.
 
 First, create a new project.
 
-![](\Asset\img\Open_IntelliJ.png)
+![](/Asset/img/Open_IntelliJ.png)
 
 Choose language JAVA, and select JDK.
 
-![](\Asset\img\Open_IntelliJ_2.png)
+![](/Asset/img/Open_IntelliJ_2.png)
 
 What ever.
 
-![Open_IntelliJ_Project](\Asset\img\Open_IntelliJ_Project.png)
+![Open_IntelliJ_Project](/Asset/img/Open_IntelliJ_Project.png)
 
 Continue, continue, then a blank project has been created.
 
-![IntelliJ_Project_Package](\Asset\img\IntelliJ_Project_Package.png)
+![IntelliJ_Project_Package](/Asset/img/IntelliJ_Project_Package.png)
 
 Here, create a new package.
 
-![IntelliJ_Project_Package_File](\Asset\img\IntelliJ_Project_Package_File.png)
+![IntelliJ_Project_Package_File](/Asset/img/IntelliJ_Project_Package_File.png)
 
 Following create a new file, be a ware of the name.
 
 After created a new file, we can now do the program.
 
-![Java_Start](\Asset\img\Java_Start.png)
+![Java_Start](/Asset/img/Java_Start.png)
 
 In this article, I shall talk about the command line arguments in IntelliJ.
 
@@ -47,17 +47,17 @@ Here the argument of main is called program arguments. Normally input are from c
 
 After ran it:
 
-![IntellJ_program_argument](\Asset\img\IntellJ_program_argument.png)
+![IntellJ_program_argument](/Asset/img/IntellJ_program_argument.png)
 
 After run it, configurations is created.
 
 Here:
 
-![](\Asset\img\IntellJ_program_argument2.png)
+![](/Asset/img/IntellJ_program_argument2.png)
 
 Apply and run it again.
 
-![IntellJ_program_argument_output](\Asset\img\IntellJ_program_argument_output.png)
+![IntellJ_program_argument_output](/Asset/img/IntellJ_program_argument_output.png)
 
 It works.
 
@@ -144,7 +144,7 @@ public class Mydemonstration1 {
     public static void main (String[] arg){
         int bp = Integer.parseInt(arg[1]);
         int bv = Integer.valueOf(arg[1]);
-        System.out.printf("bp=%10d\nbv=%10d\n",bp,bv);
+        System.out.printf("bp=%10d/nbv=%10d/n",bp,bv);
     }
 }
 ```
@@ -182,7 +182,7 @@ public class PlaceOrder {
         System.out.print("Unit Price: ");
         double t = scan.nextDouble();
 
-        System.out.printf("Order for %d %s\n",q,d.toUpperCase());
+        System.out.printf("Order for %d %s/n",q,d.toUpperCase());
         System.out.printf("Total Price%14.2f",t*(double) q);
     }
 }
